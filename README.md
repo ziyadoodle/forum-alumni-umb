@@ -30,7 +30,7 @@ and any database settings.
 
 ## Run the Project
 
-use cli to run `php spark serve` command to run the app.
+use cli to write `php spark serve` command to run the app.
 
 ## Important Change with index.php
 
