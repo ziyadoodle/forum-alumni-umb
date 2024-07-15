@@ -30,7 +30,13 @@ and any database settings.
 
 ## Run the Project
 
-use cli to write `php spark serve` command to run the app.
+use cli to write 
+1. `php spark migrate -all`
+2. `php spark serve` 
+command to run the app.
+
+for development :
+`npx tailwindcss -i ./public/css/input.css -o ./public/css/styles.css --watch`
 
 ## Important Change with index.php
 
