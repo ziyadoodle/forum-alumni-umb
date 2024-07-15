@@ -2,8 +2,8 @@
 
 <?= $this->section('content'); ?>
 <div class="container h-screen w-full max-w-full bg-hero bg-cover bg-center text-white text-center content-center px-16 2xl:px-60">
-    <p class="text-6xl xl:text-8xl 2xl:text-9xl mb-16 drop-shadow-lg">Sistem Informasi Alumni</p>
-    <p class="text-xl 2xl:text-2xl drop-shadow-2xl w-full xl:w-2/3 mx-auto">Forum Alumni Universitas Muhammadiyah Bandung bukan hanya tentang reuni dan nostalgia. Di sini, kita dapat saling menguatkan, berbagi ilmu dan pengalaman, serta berkontribusi untuk kemajuan almamater dan masyarakat luas.</p>
+    <p class="font-serif  text-6xl xl:text-8xl 2xl:text-9xl mb-16 drop-shadow-lg">Sistem Informasi Alumni</p>
+    <p class="font-serif text-xl 2xl:text-2xl drop-shadow-2xl w-full xl:w-2/3 mx-auto">Forum Alumni Universitas Muhammadiyah Bandung bukan hanya tentang reuni dan nostalgia. Di sini, kita dapat saling menguatkan, berbagi ilmu dan pengalaman, serta berkontribusi untuk kemajuan almamater dan masyarakat luas.</p>
 </div>
 <div class="container mx-auto flex flex-wrap flex-row justify-between gap-5">
     <?php foreach ($alumni as $a) : ?>

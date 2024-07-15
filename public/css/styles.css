@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif, ui-sans-serif, system-ui;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1201,7 +1201,11 @@ video {
 }
 
 .font-sans {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif, ui-sans-serif, system-ui;
+}
+
+.font-serif {
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .text-2xl {
