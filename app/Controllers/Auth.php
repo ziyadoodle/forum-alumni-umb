@@ -19,6 +19,16 @@ class Auth extends BaseController
             'title' => 'Sign In | Forum Alumni UMB'
         ];
 
+        // if (!$this->validate(
+        //     [
+        //         'email' => 'required|trim|valid_emails',
+        //         'password' => 'required|trim'
+        //     ]
+        // )) {
+        //     $validation = Services::validation();
+        //     return redirect()->to('/')->withInput()->with('validation', $validation);
+        // };
+
         echo view('auth/login', $data);
     }
 
@@ -34,7 +44,6 @@ class Auth extends BaseController
 
     public function save()
     {
-        // Input Validation
         if (!$this->validate(
             [
                 'username' => 'required',
@@ -66,9 +75,8 @@ class Auth extends BaseController
             'username' => $this->request->getVar('username'),
             'full_name' => $this->request->getVar('fullname'),
             'email' => $this->request->getVar('email'),
-            'phone' => 0,
-            'password' => $this->request->getVar('password1'),
-            'angkatan_id' => $this->request->getVar('angkatan'),
+            'password' => password_hash($this->request->getVar('password1'), PASSWORD_DEFAULT),
+            'angkatan' => $this->request->getVar('angkatan'),
             'role_id' => 2
         ]);
 

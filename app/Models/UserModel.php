@@ -10,10 +10,12 @@ class UserModel extends Model
     protected $useTimestamps = true;
     protected $allowedFields = [
         'username',
-        'fullname',
+        'full_name',
         'email',
+        'image',
+        'phone',
+        'password',
         'angkatan',
-        'password1',
-        'password2'
+        'role_id'
     ];
 }
