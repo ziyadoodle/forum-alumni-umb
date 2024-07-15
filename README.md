@@ -28,6 +28,16 @@ to your `app` folder. The affected files can be copied or merged from
 Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
 
+## Run the Project
+
+use cli to write 
+1. `php spark migrate -all`
+2. `php spark serve` 
+command to run the app.
+
+for development :
+`npx tailwindcss -i ./public/css/input.css -o ./public/css/styles.css --watch`
+
 ## Important Change with index.php
 
 `index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
