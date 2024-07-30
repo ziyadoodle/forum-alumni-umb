@@ -76,6 +76,7 @@ class Filters extends BaseFilters
             // 'login',
             // 'csrf',
             // 'invalidchars',
+            // 'login'
         ],
         'after' => [
             // 'honeypot',
@@ -108,6 +109,6 @@ class Filters extends BaseFilters
      * @var array<string, array<string, list<string>>>
      */
     public array $filters = [
-        'login' => ['before' => ['pages']]
+        'login' => ['before' => ['profile/*']],
     ];
 }
