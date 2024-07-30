@@ -19,16 +19,6 @@ class Auth extends BaseController
             'title' => 'Sign In | Forum Alumni UMB'
         ];
 
-        // if (!$this->validate(
-        //     [
-        //         'email' => 'required|trim|valid_emails',
-        //         'password' => 'required|trim'
-        //     ]
-        // )) {
-        //     $validation = Services::validation();
-        //     return redirect()->to('/')->withInput()->with('validation', $validation);
-        // };
-
         echo view('auth/login', $data);
     }
 
